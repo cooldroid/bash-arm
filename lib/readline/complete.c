@@ -82,6 +82,8 @@ typedef int QSFUNC ();
 #  define LSTAT stat
 #endif
 
+#define setpwent() 0
+
 /* Unix version of a hidden file.  Could be different on other systems. */
 #define HIDDEN_FILE(fname)	((fname)[0] == '.')
 

@@ -235,7 +235,7 @@ killpg (pgrp, sig)
 
 #if !defined (HAVE_MKFIFO) && defined (PROCESS_SUBSTITUTION)
 int
-mkfifo (path, mode)
+mkfifo__ (path, mode)
      char *path;
      int mode;
 {

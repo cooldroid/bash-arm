@@ -2567,7 +2567,7 @@ execute_pipeline (command, asynchronous, pipe_in, pipe_out, fds_to_close)
   /* If the `lastpipe' option is set with shopt, and job control is not
      enabled, execute the last element of non-async pipelines in the
      current shell environment. */
-  if (lastpipe_opt && job_control == 0 && asynchronous == 0 && pipe_out == NO_PIPE && prev > 0)
+  if (lastpipe_opt && asynchronous == 0 && pipe_out == NO_PIPE && prev > 0)
     {
       lstdin = move_to_high_fd (0, 1, -1);
       if (lstdin > 0)
