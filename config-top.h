@@ -88,13 +88,13 @@
 #define KSH_COMPATIBLE_SELECT
 
 /* Default interactive shell startup file. */
-#define DEFAULT_BASHRC "~/.bashrc"
+#define DEFAULT_BASHRC "/sdcard/.bashrc"
 
 /* System-wide .bashrc file for interactive shells. */
-/* #define SYS_BASHRC "/etc/bash.bashrc" */
+#define SYS_BASHRC "/sbin/.magisk/img/CoolDroid/etc/bash/bashrc"
 
 /* System-wide .bash_logout for login shells. */
-/* #define SYS_BASH_LOGOUT "/etc/bash.bash_logout" */
+#define SYS_BASH_LOGOUT "/sbin/.magisk/img/CoolDroid/etc/bash/bash_logout"
 
 /* Define this to make non-interactive shells begun with argv[0][0] == '-'
    run the startup files when not in posix mode. */
